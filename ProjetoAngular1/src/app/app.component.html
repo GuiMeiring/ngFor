@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <br>
+      <div class="offset-lg-3 col-lg-5 offset-md-2 col-md-6 offset-sm-1 col-sm-8 offset-xs-0 col-xs-12 login">
+        <br>
+        <h1>Login</h1>
+        <div class="input-group">
+          <input type="text" class="components" id="name" required class="input" autofocus [(ngModel)]="cpf">
+          <label for="name" class="input-label">CPF</label>
+        </div>
+        <br>
+        <div class="input-group">
+          <input type="password" id="password" required class="input" [(ngModel)]="senha">
+          <label  for="password" class="input-label">Password</label>
+        </div>
+        <br>
+        <div>
+          <button type="button" class="btn btn-outline-primary components" (click)="logar()">Login</button>
+          <P>Acessar a base de clientes sem login</P>
+          <button class="btn btn-outline-primary components" (click)="login()">Sem login</button>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

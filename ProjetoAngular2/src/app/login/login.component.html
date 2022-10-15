@@ -1,0 +1,38 @@
+<body>
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.certsan.com.br/wp-content/uploads/2020/05/icone-telefone.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
+        Contatos
+      </a>
+    </div>
+  </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-sm-2 col-sm-8 offset-xs-0 col-xs-12 login">
+          <br>
+          <h1>Login</h1>
+          <div class="input-group">
+            <input type="text" class="components" id="name" required class="input" autofocus [(ngModel)]="name">
+            <label for="name" class="input-label">Nome</label>
+          </div>
+          <br>
+          <div class="input-group">
+            <input type="number" id="password" required class="input" [(ngModel)]="telefone">
+            <label  for="name" class="input-label">Telefone</label>
+          </div>
+          <br>
+          <br>
+          <button type="button" class="btn btn-outline-primary btn-lg components" (click)="logar()">Login</button>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+</body>

@@ -1,0 +1,53 @@
+body{
+    background: -webkit-linear-gradient(to right, #337def , #008970);
+    background: linear-gradient(to right,#337def , #008970);
+    min-height: 100vh;
+}
+.login{
+    text-align: center;
+    background-color: #52a3eb;
+    color:white;
+    font: inherit;
+    border-radius: 28px;
+}
+.login2{
+    position: relative;
+    top: 200px;
+}
+.input-group{
+    position: relative;
+}
+.input{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: black;
+    background-color: transparent;
+    outline: 2px solid  #fff;
+    width: 500px;
+    margin: 0 auto;
+}
+.input-label{
+    color:#fff;
+    position: absolute;
+    top: 0px;
+    left: 32px;
+    transform: translate(10px , 10px);
+    transition: transform .25s;
+}
+.input:focus+.input-label,
+.input:valid+.input-label {
+    transform: 
+    translate(10px, -14px) scale(.8);
+    color:#fff;
+    padding-inline: 5px;
+    background-color:  #52a3eb;
+}
+.input:is(:focus, :valid){
+    outline-color: #fff;
+}
+.components{
+    width: 300px;
+}
+
